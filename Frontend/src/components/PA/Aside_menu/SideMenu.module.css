@@ -1,0 +1,44 @@
+:root{
+    --user_full_name_mb: 1vh;
+    --header_height: 7vh;
+    --nav_width: 14%;
+    --nav_menu_point_font_size: min(1.8vh, 1vw);
+    --nav_menu_pont_mb: min(0.9vh, 0.5vw);
+    --nav_menu_line_height: 5vh;
+    --additional_color: white;
+    --font_size_nav_multi: 1;
+    --main_color: #009aad;
+}
+
+.wrapper_navigation{
+    display: flex;
+    background-color: #000;
+    width: var(--nav_width);
+    height: calc(100vh - var(--header_height));
+    flex-direction: column;
+    align-items: center;
+    color: var(--additional_color);
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(var(--nav_menu_point_font_size) * var(--font_size_nav_multi));
+    line-height: var(--nav_menu_line_height);
+    flex: initial;
+}
+
+.wrapper_navigation  a:not(:first-of-type) {
+    margin-bottom: var(--nav_menu_pont_mb)
+}
+
+.wrapper_navigation  a:hover {
+    color: var(--main_color)
+}
+
+.wrapper_navigation  a {
+    transition: color 1s ease-in-out
+}
+
+
+.user_full_name{
+    margin-bottom: var(--user_full_name_mb)
+}
